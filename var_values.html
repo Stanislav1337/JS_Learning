@@ -1,0 +1,150 @@
+<!--var username; - объявление переменной 
+Имеет функциональную область видимости. 
+Это значит, что переменные, 
+объявленные с помощью var, 
+доступны во всей функции, в которой 
+они объявлены, или глобально, 
+если объявлены вне функции.-->
+
+<!--var: Имеет функциональную область видимости. 
+Это значит, что переменные, 
+объявленные с помощью var, 
+доступны во всей функции, 
+в которой они объявлены, 
+или глобально, если 
+объявлены вне функции.
+
+let: Имеет блочную область видимости. 
+Переменная доступна только внутри блока {}, 
+в котором она объявлена.
+
+function testVar() {
+    if (true) {
+        var x = 10;
+    }
+    console.log(x); // 10 (доступна вне блока if)
+}
+
+function testLet() {
+    if (true) {
+        let y = 20;
+    }
+    console.log(y); // Ошибка: y не определена (недоступна вне блока if)
+}
+-->
+
+<!--Список зарезервированных слов в JavaScript:
+await, break, case, catch, class, const, 
+continue, debugger, default, delete, do, 
+else, enum, export, extends, false, 
+finally, for, function, if, import, in, 
+instanceof, new, null, return, super, switch, 
+this, throw, true, try, typeof, 
+var, void, while, with, yield-->
+
+
+<!--
+let console;    // определяем переменную console
+console.log("Hello");   // ! Ошибка
+-->
+
+<!--
+При названии переменных надо учитывать, 
+что JavaScript является регистрозависимым языком, 
+то есть в следующем коде объявлены 
+две разные переменные:
+
+let username;
+let userName;
+-->
+
+<!--
+var username, age, height;
+let a, b, c;
+-->
+
+<!--
+После определения переменной ей 
+можно присвоить какое-либо значение. 
+Для этого применяется оператор присваивания (=):
+
+var username;
+username = "Tom";
+-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <script>
+        let username;           // Определение переменной username
+        username = "Tom";       // Присвоение переменной значения
+        console.log(username);  // Вывод значения переменной username на консоль
+    </script>
+</body>
+</html>
+-->
+
+<!--
+var username = "Tom";
+let userage = 37;
+
+Процесс присвоения переменной начального значения 
+называется инициализацией.
+Можно обратить внимание, что одна 
+переменная определена с помощью let, 
+а другая - с помощью var. 
+Конкретно в данном случае 
+это не имеет значения, 
+и мы могли бы определить обе переменных 
+либо с помощью let, либо с помощью var. 
+Но в целом между let и var, есть различия, 
+которые будут рассмотрены в одной из 
+следующих статьях.
+
+Можно инициализировать сразу несколько переменных:
+
+let name1 = "Tom", name2 = "Bob", name3 = "Sam";
+console.log(name1);  // Tom
+console.log(name2);  // Bob
+console.log(name3);  // Sam
+
+JavaScript позволяет некоторые вольности 
+при определении переменной. 
+Так, мы можем НЕ использовать ключевые слова 
+let или var
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <script>
+        username = "Tom"; // ошибки нет, норм
+        console.log(username);  // Tom
+    </script> 
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <script>
+        let username = "Tom";
+        console.log("username до изменения:", username);
+        username = "Bob";
+        console.log("username после изменения:", username);
+    </script>
+</body>
+</html>
